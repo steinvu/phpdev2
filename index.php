@@ -41,10 +41,7 @@
 						if (preg_match( '/^flux.*/', $node)){	//look for node that starts with "flux"... use regex, to get all flux* nodes
 							if ($property == 'code'){ //look for property "code"
 								echo '<input type="checkbox" name="flux_checked_list[]" value="' . $fluxvalue . '"><label>' . $fluxvalue . '</label><br/>';
-							}
-						}
-					}
-				}
+							}}}}
 
 			echo '<input type="submit" name="submit" value="Submit"/>  
 				  </form>'
@@ -56,114 +53,8 @@
 					// Loop to store and display values of individual checked checkbox.
 					foreach($_POST['flux_checked_list'] as $selected){
 						echo $selected."</br>";
-					}
-				}
-			}			
-			
+					}}}			
 		?>
-		
-			
-		<!--
-			
-			foreach ($config[0] as $node=>$node_element){
-		
-				foreach ($node_element as $property=>$value){
-	
-					echo $node . " : " . $property . " " . $value . "<br />";
-				}
-			}
-			
-			echo "<br />";
-	
-//if ($order_info=='Quatro*') 
-//use
-//if( preg_match( '/^Quatro.*/', $order_info))
-	
-			foreach ($config[0] as $node=>$node_element){
-		
-				foreach ($node_element as $property=>$value){
-	
-					if (preg_match( '/^flux.*/', $node)){	//look for node that starts with "flux"... use regex
-						echo $property . ": " . $value . "<br />";
-					}
-				}
-			}		
-	
-		
-		Zoek tekst:
-		<p class="indent">
-			<input id="txtsearch" type="text" onkeyup="getData(this.value)" placeholder="Search text">
-		</p>
-		
-		<br />
-		
-		<div id="txtsearchresult" class="response" >
-			Info will be listed here...
-		</div>
-		
-		<br />
-		
-		Zoek in Database:
-		<p class="indent">
-			<input id="txtsearchdb" type="text" onkeyup="getDbData(this.value)" placeholder="Search DB for lastname">
-		</p>
-		
-		<br>
-		
-		<div id="txtdbsearchresult" class="response">
-			DB info will be listed here...
-		</div>
-
-		
-		<h1 id="special1">Select from dropdowns:</h1>
-		
-		<p class="customtxt">Predefined list:</p>
-		<form>
-			<select id="userlist" onchange="showUser(this.value)">
-				<option value="">Select a person:</option>
-				<option value="1">Peter Griffin</option>
-				<option value="2">Lois Griffin</option>
-				<option value="3">Joseph Swanson</option>
-				<option value="4">Glenn Quagmire</option>
-			</select>
-		</form>
-		
-		<div id="txtselectionresult" class="response">
-			Selection info will be listed here...
-		</div>
-		
-		<br/><br/>
-		
-		<p class="customtxt">DB list:</p>
-		<form>
-			<select id="dbuserlist" onchange="showUserDetail(this.value)">	
-			</select>
-		</form>
-		
-		<div id="txtselectionresult" class="response">
-			Selection info will be listed here...
-		</div>		
-		
-	<div>
-			<select multiple id="multilist1">
-			  <option value="1: volvo">Volvo</option>
-			  <option value="2: saab">Saab</option>
-			  <option value="3: opel">Opel</option>
-			  <option value="4: audi">Audi</option>
-			</select> 
-			
-				<button onclick="func()">Try it</button>
-
-				<script>
-				function func() {
-					//alert("I am an alert box!");
-					alert(document.getElementById("multilist1").value);
-				}
-				</script>
-			
-		</div>
-		-->
-			
 	
 	</body>
 </html>
