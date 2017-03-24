@@ -1,0 +1,33 @@
+body {
+    background-color: lightgrey	;
+	font-family:calibri;
+	color: black;
+}
+
+p.indent{ 					/* paragraph with class indent */
+	padding-left: 1.8em 
+}
+
+div{
+    color: navy;
+    margin-left: 20px;
+	font-family:calibri;
+}
+
+.maintitle{			/* class */
+	color: darkred;
+	font-family:calibri;
+}
+
+#special1{			/* id */
+	color: black;
+	font-family:calibri;
+}
+
+.response{
+	color: darkred;
+	font-family:calibri;
+}
+
+
+
